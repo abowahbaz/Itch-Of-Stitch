@@ -1,0 +1,421 @@
+@font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-Black.woff") format("woff");
+    font-weight: black;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-BlackItalic.woff") format("woff");
+    font-weight: black;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-ExtraBold.woff") format("woff");
+    font-weight: bolder;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-ExtraBoldItalic.woff") format("woff");
+    font-weight: bolder;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-ExtraLight.woff") format("woff");
+    font-weight: lighter;
+    font-style: normal;
+  }
+
+
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-ExtraLightItalic.woff") format("woff");
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+
+
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-Light.woff") format("woff");
+    font-weight: light;
+    font-style: normal;
+  }
+
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-LightItalic.woff") format("woff");
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-Medium.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+  }
+
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-MediumItalic.woff") format("woff");
+    font-weight: medium;
+    font-style: italic;
+  }
+
+
+
+  
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "Lama Sans";
+    src: url("LamaSans-RegularItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+
+ /*WEBFONTS END*/
+
+
+
+/*Animation Start*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animation End*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Lama Sans";
+}
+
+
+
+body{
+    height: 100%;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    top:0;
+    background-color: #e7ebed;
+    position: sticky;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.menu-btn{
+display: none;
+cursor: pointer;
+font-size: 23px;
+
+}
+
+
+.navbar .logo h1{
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    border-bottom: solid 4px #f47a7a;
+    
+}
+
+.navbar .menu li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color:#424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.navbar .menu li i{
+    color:#f47a7a;
+}
+
+.navbar .menu li .active{
+    border-bottom: 4px solid #f47a7a ;
+}
+
+
+
+.navbar .menu li  a:hover{
+    border-bottom: 4px solid #f47a7a ;
+
+}
+
+
+
+
+
+
+/*ToolTip Start*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: rgb(175, 172, 172);
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+
+
+  .content{
+    background-image: url(section.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+
+  }
+
+  .content h1 {
+    font-size: 40px;
+    color: #424144;
+  }
+
+
+  .content p {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #424144;
+  }
+
+  .content button{
+    border: none;
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #4197dc;
+    color: #fff;
+    font-size: 15px;
+    cursor :pointer;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+
+
+
+
+
+  .content button:hover{
+    background-color: white;
+    cursor: pointer;
+    color :#4197dc;
+    
+  }
+
+  .pheading{
+    text-align: center;
+    margin: 50px 0;
+    color: #424144;
+  }
+
+
+
+
+
+  .main{
+    padding: 10px 5%;
+  }
+
+
+  .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px , 1fr));    
+
+}
+
+  .products .card{
+    width: 310px;
+    background-color: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.products .card img{
+    margin-left: 10%;
+    height: 250px;
+    width: 80%;
+}
+
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.7;
+}
+
+.products .card .title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .box{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+
+}
+
+.products .card .box .price{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f47a7a;
+}
+
+.products .card .box .btn{
+    font-size: 12px;
+    color:#f47a7a;
+    padding: 10px 18px;
+    font-weight: bold;
+    border: 1.5px solid #f47a7a;
+    cursor: pointer;
+    border-radius: 25px;
+    border-top-right-radius: 0;
+
+}
+
+.products .card .box .btn:hover{
+background-color: #f47a7a;
+color: #f5f5f5;
+
+}
+
+footer{
+  background-color: #e7ebed;
+  height: 10vh;
+  text-align: center;
+  font-weight: bold;
+  border-top: #f47a7a 4px solid;
+  outline: #4197dc 4px solid;
+
+}
+footer ul{
+  text-align: center;
+  
+}
+
+
+
+footer a i{
+  color: #f47a7a;
+  font-size: xx-large;
+}
+
+#IG :hover{
+  color: #C13584  ;
+}
+
+#FB :hover{
+  color: #4267B2;
+}
+
+
+
+/*ScrollBar*/
+::-webkit-scrollbar-track{
+  background: black;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: black;
+  border-radius: 5px;
+}
